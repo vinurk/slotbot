@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SlotBot</title>
+</head>
+<body>
+    <div class="content">
+        <button class ="btn" id="startBtn">Start</button>
+        <button class ="btn" id="stopBtn" disabled>Stop</button>
+    </div>
+    <div class="otherContent">
+        <div class="delayHead">
+            <h4 id ="headText">Delay value:</h4>
+            <h4 id="delayValue">1000 ms</h4>
+        </div>
+        
+        <input id = "delayRange" type="range" value="0" min="0" max="5000" step="1" list="delaySteps" >
+
+        <datalist id="delaySteps">
+            <option value="1000">
+            <option value="2000">
+            <option value="3000">
+            <option value="4000">
+            
+            
+        </datalist>
+
+        <div id = "counterDiv">
+            <h4 id="counterText">Click Counter: 0 </h4>
+            <button class ="btn" id="counterReset">Reset counter</button>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
